@@ -1,3 +1,5 @@
 #!/bin/sh
 
-docker build --rm -t smartmetserver .
+source env.sh
+
+docker build --rm -t IMAGENAME .
