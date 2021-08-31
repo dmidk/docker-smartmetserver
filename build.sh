@@ -2,4 +2,4 @@
 
 source env.sh
 
-docker build --rm -t IMAGENAME .
+docker build --rm -t $IMAGENAME .
