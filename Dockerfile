@@ -51,7 +51,7 @@ COPY smartmetconf /etc/smartmet
 COPY wms /smartmet/share/wms
 COPY docker-entrypoint.sh /
 
-RUN mkdir -p /smartmet/data/{meps,hirlam,hirlam-knmi,gfs,icon,gem,gens-avg,gens-ctrl,hbm,wam}/{surface,pressure} \
+RUN mkdir -p /smartmet/data/{seamless,meps,hirlam,hirlam-knmi,gfs,icon,gem,gens-avg,gens-ctrl,hbm,wam}/{surface,pressure} \
              /smartmet/share/wms/customers
 
 RUN mkdir -p /var/smartmet/timeseriescache /var/smartmet/imagecache /var/smartmet/querydata/validpoints && \
